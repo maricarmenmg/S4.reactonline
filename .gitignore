@@ -2,7 +2,7 @@ node_modules
 .DS_Store
 .vscode
 package-lock.json
-yarn.lock
+.yarn.lock
 *.log
 test-results.html
 bundle.js
