@@ -1,5 +1,5 @@
 
-// NIVEL 1
+// Nivell 1
 
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
@@ -25,26 +25,36 @@ function moviesAverageOfDirector(array, director) {
 
 // Exercise 4:  Alphabetic order by title
 function orderAlphabetically(array) {
-  const orderBytitle = array.map(movie => movie.title);
-  const firstTwentyMovies = orderBytitle.sort().slice(0, 20);
+  const orderByTitle = array.map(movie => movie.title);
+  const firstTwentyMovies = orderByTitle.sort().slice(0, 20);
   console.log("EXERCICE 4 ->", firstTwentyMovies);
   return firstTwentyMovies;
 }
 
-
 // Exercise 5: Order by year, ascending
-function orderByYear() {
-
+function orderByYear(array) {
+  const orderMoviesYear = [...array].sort((a, b) => { return (a.year - b.year) || (a.title.localeCompare(b.title))})
+  console.log("EXERCICE 5 ->", orderMoviesYear);
+  return orderMoviesYear;
 }
+
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
+function moviesAverageByCategory(array, category) {
+  const averageByCat = array.filter(element => { 
+         if (typeof(element.score) !== "number");
+              else return element.genre.includes(category);
+  });
 
+  const average = Number((averageByCat.reduce((acc, cur) => acc + cur.score, 0) / averageByCat.length).toFixed(2));
+  console.log("EXERCISE 6 ->", average);
+  return average;
 }
 
+// Nivell 2
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes() {
-
+  //console.log("EXERCICE 7 ->", "hoursToMinutes");
 }
 
 // Exercise 8: Get the best film of a year
