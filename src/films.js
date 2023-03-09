@@ -63,6 +63,7 @@ function moviesAverageByCategory(array, category) {
 // Nivell 2 ⤵ 
 
 // Exercise 7: Modify the duration of movies to minutes
+
 function hoursToMinutes(movies) {
   return movies.map(movie => {
     const newMovie = { ...movie }; // create a copy of the movie object
@@ -81,17 +82,17 @@ function hoursToMinutes(movies) {
     return newMovie;
   });
 }
+
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear(array, year) {
-  const arrayCopy = [...array];
-  const moviesOfYear = arrayCopy.filter((movie) => movie.year === year);
-  const bestFilmOfYear = moviesOfYear.reduce((best, current) =>
-    best.score >= current.score ? best : current
-  );
+
+  const newBestFilm = [...array];
+  const moviesOfYear = newBestFilm.filter((movie) => movie.year === year);
+  const bestFilmOfYear = moviesOfYear.reduce((best, current) => best.score >= current.score ? best : current);
   const highestScoreOfYear = bestFilmOfYear.score;
-  const bestMovieOfYear = moviesOfYear.filter(
-    (movie) => movie.score === highestScoreOfYear
-  );
+  const bestMovieOfYear = moviesOfYear.filter((movie) => movie.score === highestScoreOfYear
+);
+  
   //console.log("EXERCICE 8 ->", bestMovieOfYear);
   return bestMovieOfYear;
 }
