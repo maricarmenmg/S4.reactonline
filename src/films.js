@@ -92,7 +92,7 @@ function bestFilmOfYear(array, year) {
   const bestMovieOfYear = moviesOfYear.filter(
     (movie) => movie.score === highestScoreOfYear
   );
-  console.log("EXERCICE 8 ->", bestMovieOfYear);
+  //console.log("EXERCICE 8 ->", bestMovieOfYear);
   return bestMovieOfYear;
 }
 
