@@ -3,6 +3,8 @@
 
 ![alt preview](src/images/sprint4.png)
 
+#### [Solution Test](https://react-sprint4.netlify.app/)
+
 # Sprint 4 IT Academy | Video management tool
 
 ## Introduction
