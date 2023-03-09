@@ -1,7 +1,7 @@
 
 
 
-![alt preview](images/sprint4.png)
+![alt preview](src/images/sprint4.png)
 
 # Sprint 4 IT Academy | Video management tool
 
