@@ -63,6 +63,11 @@ function moviesAverageByCategory(array, category) {
               else return element.genre.includes(category);   
   });
 
+  const average = Number((averageByCat.reduce((acc, cur) => acc + cur.score, 0) / averageByCat.length).toFixed(2)); // calculate the average of the movies of the category
+  //console.log("EXERCISE 6 ->", average);
+  return average;
+}
+
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes() {
 
