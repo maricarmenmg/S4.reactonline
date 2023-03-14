@@ -50,8 +50,10 @@ function orderAlphabetically(array) {
 
 
 // Exercise 5: Order by year, ascending
-function orderByYear() {
-
+function orderByYear(array) {
+  const orderYear = [...array].sort((a, b) => { return (a.year - b.year) || (a.title.localeCompare(b.title))})  // sort the array by year
+  //console.log("EXERCICE 5 ->", orderYear);
+  return orderYear;
 }
 
 // Exercise 6: Calculate the average of the movies in a category
