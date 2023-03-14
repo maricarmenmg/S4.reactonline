@@ -12,7 +12,7 @@
  ⚡️
 */
 
-//  Nivell 1 ★⤵ 
+//  Nivel 1 ★⤵ 
 
 
 // Exercise 1: Get the array of all directors.
