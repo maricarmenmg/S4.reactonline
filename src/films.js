@@ -70,7 +70,7 @@ function moviesAverageByCategory(array, category) {
 }
 
 
-// Nivell 2 ★★ ⤵ 
+// Nivel 2 ★★ ⤵ 
 
 // Exercise 7: Modify the duration of movies to minutes
 
@@ -106,8 +106,6 @@ function bestFilmOfYear(array, year) {
   //console.log("EXERCICE 8 ->", bestMovieOfYear);
   return bestMovieOfYear;
 }
-
-
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
